@@ -46,6 +46,18 @@
   text-decoration: underline;
 }
 
+.description a {
+  color: #0070f3;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.description a:hover,
+.description a:focus,
+.description a:active {
+  text-decoration: underline;
+}
+
 .title {
   margin: 0;
   line-height: 1.15;
