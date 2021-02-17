@@ -109,19 +109,43 @@ const eliminateRestrictions = (file, schedule) => {
     restrictions = checkRestrictions(arraySchedule);
     console.log("🚀 🚀 🚀 TRY FOR " + count + "th Time 🚀 🚀 🚀");
     semesterCounter = restrictions.semesterCounter;
-    console.log("🚀 ~ We have ", semesterCounter, " Semester DAYS limit.");
+    if (semesterCounter !== 0) {
+      console.warn("🚀 ~ We have ", semesterCounter, " Semester DAYS limit.");
+    } else {
+      console.log("🚀 ~ We have ", semesterCounter, " Semester DAYS limit.");
+    }
     profCounter = restrictions.profCounter;
-    console.log("🚀 ~ We have ", profCounter, " Prof DAYS limit.");
+    if (profCounter !== 0) {
+      console.warn("🚀 ~ We have ", profCounter, " Prof DAYS limit.");
+    } else {
+      console.log("🚀 ~ We have ", profCounter, " Prof DAYS limit.");
+    }
     lessonCounter = restrictions.lessonCounter;
-    console.log("🚀 ~ We have ", lessonCounter, " Lesson in a DAY limit.");
+    if (lessonCounter !== 0) {
+      console.warn("🚀 ~ We have ", lessonCounter, " Lesson in a DAY limit.");
+    } else {
+      console.log("🚀 ~ We have ", lessonCounter, " Lesson in a DAY limit.");
+    }
     profTimeCounter = restrictions.profTimeCounter;
-    console.log("🚀 ~ We have ", profTimeCounter, " Prof in a TIME limit.");
+    if (profTimeCounter !== 0) {
+      console.warn("🚀 ~ We have ", profTimeCounter, " Prof in a TIME limit.");
+    } else {
+      console.log("🚀 ~ We have ", profTimeCounter, " Prof in a TIME limit.");
+    }
     semesterTimeCounter = restrictions.semesterTimeCounter;
-    console.log(
-      "🚀 ~ We have ",
-      semesterTimeCounter,
-      " Semester in a TIME limit."
-    );
+    if (semesterTimeCounter !== 0) {
+      console.warn(
+        "🚀 ~ We have ",
+        semesterTimeCounter,
+        " Semester in a TIME limit."
+      );
+    } else {
+      console.log(
+        "🚀 ~ We have ",
+        semesterTimeCounter,
+        " Semester in a TIME limit."
+      );
+    }
 
     if (profCounter !== 0) {
       arraySchedule = profDaysRestrictions(arraySchedule);
