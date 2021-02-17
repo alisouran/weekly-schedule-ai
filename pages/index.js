@@ -30,7 +30,11 @@ export default function Home() {
       {lastSchedule === null ? (
         <main className={styles.main}>
           <h1 className={styles.title}>Weekly Schedule</h1>
-
+          <p className={styles.description}>
+            Download Source
+            <a href="/ai991.zip">zip file</a>
+            <a href="/ai991.tar.xz">tar.xz file</a>
+          </p>
           <p className={styles.description}>
             Download sample SEMESTERS excel file from{" "}
             <a href="/sample.xlsx">HERE!</a>
